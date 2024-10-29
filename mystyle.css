@@ -128,13 +128,32 @@ article p { font-weight: 600;
 }
 
 
-article p video { background-color: #3a3434;
-    float: right;
+article p video {
+    background-color: #3a3434;
+    float: right; 
+    float: inline-start right;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
+    max-width: 100px; 
 }
+@media screen and (min-width: 300px) {
+    article p video {
+        max-width: 100px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
+    }
+}
+@media screen and (min-width: 600px) {
+    article p video {
+        max-width: 300px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
+    }
+}
+
+@media screen and (min-width: 900px) {
+    article p video {
+        max-width: 400px; /* ปรับขนาดสูงสุดสำหรับหน้าจอใหญ่ */
+    }
+}
+
+
 article h1 {font-weight: 1000;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
