@@ -135,6 +135,7 @@ article p video {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 100px; 
+    margin-top: 30px;
 }
 @media screen and (min-width: 300px) {
     article p video {
@@ -146,13 +147,31 @@ article p video {
         max-width: 300px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
     }
 }
-
 @media screen and (min-width: 900px) {
     article p video {
         max-width: 400px; /* ปรับขนาดสูงสุดสำหรับหน้าจอใหญ่ */
     }
 }
 
+article p img { width: auto;
+    max-width: 100px;
+}
+
+@media screen and (min-width: 200px) {
+    article p img {
+        max-width: 150px; 
+    }
+}
+@media screen and (min-width: 500px) {
+    article p img {
+        max-width: 200px; 
+    }
+}
+@media screen and (min-width: 700px) {
+    article p img {
+        max-width: 300px; 
+    }
+}
 
 article h1 {font-weight: 1000;
     font-family: 'Courier New', Courier, monospace;
