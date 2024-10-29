@@ -6,15 +6,24 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0ffe2;
+    background-color: #fcf9e1;
     color: #000000;
     line-height: 1.6;
+    font-size: 12px;
+}
+
+@media screen and (min-width : 600px){
+    body { font-size: 16px;}
+}
+
+@media screen and (min-width :900px){
+    body {font-size: 20px;}
 }
 
 /* Header Styles */
 header { 
     font-family: 'Courier New', Courier, monospace;
-    background-color: #b3ff00;
+    background-color: #ffea00;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
