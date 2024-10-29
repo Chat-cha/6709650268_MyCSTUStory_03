@@ -131,45 +131,45 @@ article p { font-weight: 600;
 article p video {
     background-color: #3a3434;
     float: right; 
-    float: inline-start right;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    max-width: 100px; 
     margin-top: 30px;
+    width: 40%;
 }
 @media screen and (min-width: 300px) {
     article p video {
-        max-width: 100px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
+        max-width: 80px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
     }
 }
 @media screen and (min-width: 600px) {
     article p video {
-        max-width: 300px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
+        max-width: 100px; /* ปรับขนาดสูงสุดเมื่อหน้าจอใหญ่ขึ้น */
     }
 }
 @media screen and (min-width: 900px) {
     article p video {
-        max-width: 400px; /* ปรับขนาดสูงสุดสำหรับหน้าจอใหญ่ */
+        max-width: 200px; /* ปรับขนาดสูงสุดสำหรับหน้าจอใหญ่ */
     }
 }
 
 article p img { width: auto;
-    max-width: 100px;
+    max-width: 60px;
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 200px) {
     article p img {
-        max-width: 150px; 
+        max-width: 100px; 
     }
 }
 @media screen and (min-width: 500px) {
     article p img {
-        max-width: 200px; 
+        max-width: 180px; 
     }
 }
 @media screen and (min-width: 700px) {
     article p img {
-        max-width: 300px; 
+        max-width: 250px; 
     }
 }
 
